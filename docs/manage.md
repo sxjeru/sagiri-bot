@@ -2,7 +2,7 @@
 
 ## 群组内管理
 
-注：设置命令通用格式：`setting -set %command%=%new_value%` 其中`command` 为命令名称，`new_value` 为要设置的状态，支持多命令同时执行
+注：设置命令通用格式：`setting -set {command}={new_value}` 其中`command` 为命令名称，`new_value` 为要设置的状态，支持多命令同时执行
 
 使用示例： `setting -set setu=True real=True bizhi=True`
 
@@ -47,7 +47,7 @@
 
 被授权后的用户将可以使用文档内对应权限等级的管理命令
 
-注：等级4的账户将在机器人初始化时就存入数据库，对应成员id为 `config.yaml` 中所填入的 `BotQQ` 项
+注：等级4的账户将在机器人初始化时就存入数据库，对应成员id为 `config.yaml` 中所填入的 `bot_qq` 项
 
 ## 黑名单相关
 - 加入黑名单：`blacklist -add @member`
